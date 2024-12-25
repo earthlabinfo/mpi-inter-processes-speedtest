@@ -43,6 +43,11 @@ Inter-node communications included a 1-second delay after each transfer.
 
 ## run by openpbs
 
+想定環境は以下のとおり。
+- openpbsが動作しており、ログインユーザのhomeが各ノードで共有されている
+- ノード間をinteractiveな入力なしでSSHできるよう設定されている
+- 使用可能なノードが3台以上ある
+
 ```bash
 qsub job_mpi-test.sh
 110.n001
