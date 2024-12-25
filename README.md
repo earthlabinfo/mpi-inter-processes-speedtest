@@ -1,6 +1,6 @@
 # mpi-inter-processes-speedtest
 
-空くまでテスト用のサンプルで、出力自体に意味は無い。
+あくまでノード間通信テスト用のサンプルで、出力自体に意味は無い。  
 実行時、無駄な通信をノード間で流すので、ネットワーク負荷に注意。
 
 ## compile with oneAPI <2024
@@ -40,8 +40,6 @@ Inter-node communications included a 1-second delay after each transfer.
 - 参加ノードはn00[1-3]の3台。
 - ppnを1意外にした場合は、ノード内通信が発生する可能性があるので1を推奨。
 - npを大きくしすぎるとメモリを大量に消費するので、ノード数+1程度から始めることを推奨。
-
-
 
 ## run by openpbs
 
